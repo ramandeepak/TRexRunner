@@ -1,0 +1,88 @@
+.tRexWrapper {
+  width:118px;
+  height: 95px;
+}
+
+.tRex1, .tRex2, .tRexStill, .tRexStill2, .tRexDied {
+  width: 90px;
+  height: 95px;
+  background-image: url("/img/dino.png");
+  background-repeat: no-repeat;
+}
+
+.tRex1 {
+  background-position: -172px 0px;
+}
+
+.tRex2 {
+  background-position: -260px 0px;
+}
+
+.tRexStill {
+  background-position: 4px 0px;
+}
+
+.tRexStill2 {
+  background-position: -84px 0px;
+}
+
+.tRexDied {
+  background-position: -348px 0px;
+}
+
+.tRexDuck1, .tRexDuck2 {
+  width: 118px;
+  height: 95px;
+  background-image: url("/img/dino_ducking.png");
+  background-repeat: no-repeat;
+}
+
+.tRexDuck1 {
+  background-position: 0px 0px;
+}
+
+.tRexDuck2 {
+  background-position: -118px 0px;
+}
+
+.tRexCloud {
+  width: 90px;
+  height: 42px;
+  background-image: url("/img/cloud.png");
+  background-repeat: repeat-x;
+  animation: tRexCloudMove 8s linear infinite;
+  animation-play-state: paused;
+}
+
+.tRexCacti {
+  width: 70px;
+  height: 60px;
+  background-image: url("/img/cacti-small.png");
+  background-position: -35px 0px;
+  animation: tRexCactiMove 4s linear infinite;
+  animation-play-state: paused;
+}
+
+.tRexGround {
+  width: 600px;
+  height: 19px;
+  background-image: url("/img/ground.png");
+  background-repeat: repeat-x;
+  animation: tRexGroundMove 4s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes tRexGroundMove {
+  from {background-position: 1203px 0px;}
+  to {background-position: 0px 0px;}
+}
+
+@keyframes tRexCloudMove {
+  from {left: 610px;}
+  to {left: -90px;}
+}
+
+@keyframes tRexCactiMove {
+  from {left: 400px;}
+  to {left: -290px;}
+}

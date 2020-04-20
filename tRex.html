@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="scripts/tRex.js"></script>
+  </head>
+  <body style="background-color: whitesmoke;"  onkeyup="isTRexDuckingNeeded(event)" onkeypress="isTRexDuckingNeeded(event)" onkeydown="myFunction(event)" onload="tRexAliveLoop()">
+    <div style="width:60%; height:500px; margin:auto; padding-top:0px; padding-bottom:0px; background-color:whitesmoke;">
+    <div style="top: 30px;
+                left: 0px; 
+                position: relative; 
+                " id="cloud"; class="tRexCloud"></div>
+    <div id="tRexContainer" style="top: 110px;
+                left: 0px; 
+                position: relative; 
+                display: inline-block;" class="tRexWrapper">
+    <div id="tRex" class="tRexStill"></div></div>
+    <div style="top: 108px;
+                left: 0px; 
+                position: relative; 
+                display: inline-block;" id="cacti" class="tRexCacti"></div>
+    <div style="top: 100px;
+                left: 0px; 
+                position: relative; 
+                " id="ground"; class="tRexGround"></div>
+    </div>
+  </body>
+</html>
